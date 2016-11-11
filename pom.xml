@@ -445,7 +445,7 @@
                     <target>1.8</target>
                     <optimize>true</optimize>
                     <debug>true</debug>
-                    <compilerId>javac-with-errorprone</compilerId>
+                    <compilerId>javac</compilerId>
                     <forceJavacCompilerUse>true</forceJavacCompilerUse>
                     <showWarnings>true</showWarnings>
                     <compilerArgument>-XepDisableWarningsInGeneratedCode</compilerArgument>
