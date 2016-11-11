@@ -448,7 +448,6 @@
                     <compilerId>javac</compilerId>
                     <forceJavacCompilerUse>true</forceJavacCompilerUse>
                     <showWarnings>true</showWarnings>
-                    <compilerArgument>-XepDisableWarningsInGeneratedCode</compilerArgument>
                 </configuration>
                 <dependencies>
                     <dependency>
