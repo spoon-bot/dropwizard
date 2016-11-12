@@ -19,6 +19,7 @@
 
     <modules>
         <module>docs</module>
+        <module>dropwizard-bom</module>
         <module>dropwizard-core</module>
         <module>dropwizard-client</module>
         <module>dropwizard-db</module>
