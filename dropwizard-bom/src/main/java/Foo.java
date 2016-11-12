@@ -1,1 +1,1 @@
-class Foo{}
+public class Foo{}
