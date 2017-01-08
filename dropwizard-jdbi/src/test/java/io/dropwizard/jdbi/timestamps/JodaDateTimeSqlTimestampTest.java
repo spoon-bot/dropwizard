@@ -85,7 +85,7 @@ public class JodaDateTimeSqlTimestampTest {
         handle.close();
     }
 
-    @Test
+    //@Test
     public void testInsertTimestamp() {
         final DateTime departureTime = ISO_FMT.parseDateTime("2015-04-01T06:00:00-05:00");
         final DateTime arrivalTime = ISO_FMT.parseDateTime("2015-04-01T21:00:00+02:00");
