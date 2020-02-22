@@ -41,7 +41,6 @@
     <module>dropwizard-servlets</module>
     <module>dropwizard-lifecycle</module>
     <module>dropwizard-assets</module>
-    <module>dropwizard-benchmarks</module>
     <module>dropwizard-http2</module>
     <module>dropwizard-request-logging</module>
   </modules>
