@@ -17,32 +17,6 @@
   <modules>
     <module>dropwizard-bom</module>
     <module>dropwizard-core</module>
-    <module>dropwizard-client</module>
-    <module>dropwizard-db</module>
-    <module>dropwizard-jdbi</module>
-    <module>dropwizard-migrations</module>
-    <module>dropwizard-hibernate</module>
-    <module>dropwizard-auth</module>
-    <module>dropwizard-forms</module>
-    <module>dropwizard-views</module>
-    <module>dropwizard-views-freemarker</module>
-    <module>dropwizard-views-mustache</module>
-    <module>dropwizard-testing</module>
-    <module>dropwizard-util</module>
-    <module>dropwizard-jackson</module>
-    <module>dropwizard-validation</module>
-    <module>dropwizard-configuration</module>
-    <module>dropwizard-logging</module>
-    <module>dropwizard-metrics</module>
-    <module>dropwizard-metrics-ganglia</module>
-    <module>dropwizard-metrics-graphite</module>
-    <module>dropwizard-jersey</module>
-    <module>dropwizard-jetty</module>
-    <module>dropwizard-servlets</module>
-    <module>dropwizard-lifecycle</module>
-    <module>dropwizard-assets</module>
-    <module>dropwizard-http2</module>
-    <module>dropwizard-request-logging</module>
   </modules>
   <properties>
     <dropwizard.url>http://www.dropwizard.io/${project.version}</dropwizard.url>
@@ -52,6 +26,7 @@
     <junit.version>4.12</junit.version>
     <assertj.version>3.5.2</assertj.version>
     <mockito.version>2.2.1</mockito.version>
+    <findbugs.skip>true</findbugs.skip>
   </properties>
   <developers>
     <developer>
@@ -327,11 +302,6 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.5.1</version>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.19.1</version>
         </plugin>
@@ -421,24 +391,7 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
-          <optimize>true</optimize>
-          <debug>true</debug>
-          <compilerId>javac</compilerId>
-          <forceJavacCompilerUse>true</forceJavacCompilerUse>
-          <showWarnings>true</showWarnings>
         </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.codehaus.plexus</groupId>
-            <artifactId>plexus-compiler-javac-errorprone</artifactId>
-            <version>2.8</version>
-          </dependency>
-          <dependency>
-            <groupId>com.google.errorprone</groupId>
-            <artifactId>error_prone_core</artifactId>
-            <version>2.0.11</version>
-          </dependency>
-        </dependencies>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
